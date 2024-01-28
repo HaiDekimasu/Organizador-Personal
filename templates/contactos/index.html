@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %} Contactos {% endblock title %}
+
+{% block 'content' %}
+    <form class="container" action="{% url 'contactos' %}" method="GET">
+        <input type="text" name="Buscar" placeholder="Buscar Contacto" class="place">
+        <input type="submit" value="Buscar" class="botonbus" >
+    </form>
+    <div class="reseteo">
+        <a href="{% url 'contactos' %}" class="botonver">Ver Todo</a>
+        <a href="{% url 'contactos_create' %}" class="botonañadir">Añadir</a>
+    </div>
+    <ul class="lista-1">
+        {% for contactos in contacto %}
+        <li>{{contactos}}
+            <span class="boton">
+                <a href="{% url 'contactos_view' contactos.id %}" class="boton1">Ver</a>
+                <a href="{% url 'contactos_edit' contactos.id %}" class="boton2">Editar</a>
+                <a href="{% url 'contactos_delete' contactos.id %}" class="boton3">Borrar</a>
+            </span>
+        </li>
+        {% endfor %}
+        
+    </ul>
+
+{% endblock %}
+
+
+
+
+
+

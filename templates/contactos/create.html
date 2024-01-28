@@ -1,0 +1,21 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %} Crear Contactos {{contactos.name}}{% endblock title %}
+
+{% block 'content' %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="alerta"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <div class="container3">
+        <form class="my-form" action="{% url 'contactos_create' %}" method="POST">
+            {% csrf_token %}
+            {{form}}
+            <input class="botonañadir" type="submit" value="Enviar"/>
+            <a href="{% url 'contactos' %}" class="botonatras">Volver Atras</a>
+        </form>
+    </div>
+{% endblock %}

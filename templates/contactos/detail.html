@@ -1,0 +1,21 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %} Ver Contactos {{contactos.name}}{% endblock title %}
+
+{% block 'content' %}
+    
+    <div class="botonañadir">
+        <a href="{% url 'contactos' %}" class="">Volver Atras</a>
+    </div>
+    <ul class="lista-2">
+        <li> Nombre: {{contactos.name}}</li>
+        <li> Apellido: {{contactos.last_name}}</li>
+        <li> Telefono Casa: {{contactos.phone}}</li>
+        <li> Telefono Mobil: {{contactos.mobile}}</li>
+        <li> Email: {{contactos.email}}</li>
+        <li> Compañia: {{contactos.company}}</li>
+        <li> Fecha de Creacion: {{contactos.date}}</li>
+        <li> Nota: {{contactos.notes}}</li>
+    </ul>
+
+{% endblock %}
