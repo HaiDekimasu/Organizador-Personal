@@ -1,0 +1,18 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %} Ver Tarea {{lista.title}}{% endblock title %}
+
+{% block 'content' %}
+    
+    <div class="botonañadir">
+        <a href="{% url 'lista' %}" class="">Volver Atras</a>
+    </div>
+    <ul class="lista-2">
+        <li> title: {{lista.title}}</li>
+        <li> Descripcion: {{lista.description}}</li>
+        <li> Fecha de Creacion: {{lista.date}}</li>
+        <li> Fecha de termino: {{lista.estimated_end}}</li>
+        <li> Prioridad (1..5): {{lista.priority}}</li>
+    </ul>
+
+{% endblock %}

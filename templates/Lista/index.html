@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %} Contactos {% endblock title %}
+
+{% block 'content' %}
+<form class="container" action="{% url 'lista' %}" method="GET">
+    <input type="text" name="Buscar" placeholder="Buscar Tarea..." class="place">
+    <input type="submit" value="Buscar" class="botonbus" >
+</form>
+<div class="reseteo">
+    <a href="{% url 'lista' %}" class="botonver">Ver Todas</a>
+    <a href="{% url 'lista_create' %}" class="botonañadir">Añadir</a>
+</div>
+<ul class="lista-1">
+    {% for lista in listas %}
+    <li>{{lista}}
+        <span class="boton">
+            <a href="{% url 'lista_view' lista.id %}" class="boton1">Ver</a>
+            <a href="{% url 'lista_edit' lista.id %}" class="boton2">Editar</a>
+            <a href="{% url 'lista_delete' lista.id %}" class="boton3">Borrar</a>
+        </span>
+    </li>
+    {% endfor %}
+    
+</ul>
+
+{% endblock %}
+
+
+
+
+
+
