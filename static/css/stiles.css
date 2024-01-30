@@ -1,0 +1,263 @@
+/* base */
+
+:root{
+    --color-primary: rgb(247, 236, 236);
+    --color-secondary: #0D6EFD;
+    --color-body: #052D49;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a[href^="#"] {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+body {
+    background-image: linear-gradient(to right,#7f7fd5a6,#6085c994,#91eae47c);
+}
+/* pagina index____________________________________________________ */
+.pagina1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.pagina1 h1{
+    font-size: 5rem;
+    font-weight:bolder;
+}
+/*_________________________________________________________________*/
+/* barra de navegacion*/
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-list :hover{
+    color: var(--color-primary);
+}
+.nav-link {
+    justify-content: space-around;
+}
+/*_______________________________________________________________*/
+/* contactos y botones*/
+.lista-1{
+    width: 50%;
+}
+.lista-1 li{
+    color:var(--color-body);
+    border: solid 2px;
+    margin-top: 5px;
+    width: 100%;
+    list-style: none;
+    padding-left: 5px;
+    text-decoration: none;
+    height: 40px;
+    font-size: 1rem;
+}
+.boton{
+    float: right;
+    padding-right: 5px;
+    padding-top: 6px;
+
+}
+.boton1{
+    text-decoration: none;
+    color: white;
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #052D49;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0D6EFD;
+}
+.boton2{
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #05490c;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #078d46;
+}
+.boton3{
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #49050c;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #9a0c0f;
+}
+.boton1:hover{
+    background-color: #f4f6f7;
+    color: #0D6EFD;
+}
+.boton2:hover{
+    background-color: #f4f6f7;
+    color: #078d46;
+}
+.boton3:hover{
+    background-color: #f4f6f7;
+    color:#9a0c0f;
+}
+/*barra y boton de busqueda_________________________________________________*/
+.container{
+    width: 50%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.place{
+    width: 83%;
+}
+.botonbus{
+    float: right;
+    color: white;
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #052D49;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0D6EFD;
+}
+.botonbus:hover{
+    background-color: #f4f6f7;
+    color: #0D6EFD;
+}
+/*botones de ver todo y Añadir________________________________________________________________________*/
+.reseteo{
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex;
+    justify-content: space-evenly;
+}
+.botonver{
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #052D49;
+    width: 45%;
+    background-color: #0D6EFD;
+}
+.botonver:hover{
+    background-color: #f4f6f7;
+    color: #0D6EFD;
+}
+.botonañadir{
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #052D49;
+    width: 45%;
+    background-color: #0D6EFD;
+}
+.botonañadir:hover{
+    background-color: #f4f6f7;
+    color: #0D6EFD;
+}
+/*footer ___________________________________________________________________*/
+footer{
+    padding-top: 30px;
+    margin-top: 50px;
+    height: 100px;
+    background-image: linear-gradient(to left,#91EAE4, #86A8E7,#7F7FD5);
+    color: rgb(8, 8, 8);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*main_________________________________________________________*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    margin: 50px;
+    padding-bottom: 6rem;
+}
+/*detalle de contactos_______________________________________________________________________________*/
+.lista-2{
+    list-style: none;
+    background-image: linear-gradient(to bottom,#91EAE4, #86A8E7,#7F7FD5);
+    width: 45%;
+    height: 400px;
+    border: solid 2px;
+    border-radius: 1%;
+    border-color: #052D49;
+    text-align: justify;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.lista-2 li{
+    border: solid 1px;
+    border-bottom: #052D49;
+    border-left: none;
+}
+/* editar contactos__________________________________________________________________________________*/
+.my-form{
+    color: #052D49;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 120px;
+}
+.my-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.my-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.my-form a{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.botonatras{
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+    border: solid 1px;
+    border-color: #052D49;
+    width: 100%;
+    background-color: #0D6EFD;
+}
+.botonatras:hover{
+    background-color: #f4f6f7;
+    color: #0D6EFD;
+}
+.alerta{
+    text-align: center;
+    list-style: none;
+    font-weight: 900;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #052D49;
+    color: white;
+}
