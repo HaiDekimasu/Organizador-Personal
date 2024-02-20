@@ -44,12 +44,14 @@ body {
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Sedgwick Ave", cursive;
 }
 .nav-list :hover{
     color: var(--color-primary);
 }
 .nav-link {
     justify-content: space-around;
+    
 }
 /*_______________________________________________________________*/
 /* contactos y botones*/
@@ -82,6 +84,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #0D6EFD;
+    font-family: "Vibur", cursive;
 }
 .boton2{
     border-radius: 5%;
@@ -90,6 +93,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #078d46;
+    font-family: "Vibur", cursive;
 }
 .boton3{
     border-radius: 5%;
@@ -98,6 +102,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #9a0c0f;
+    font-family: "Vibur", cursive;
 }
 .boton1:hover{
     background-color: #f4f6f7;
@@ -133,6 +138,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #0D6EFD;
+    font-family: "Vibur", cursive;
 }
 .botonbus:hover{
     background-color: #f4f6f7;
@@ -145,6 +151,7 @@ body {
     display: flex;
     align-items: flex;
     justify-content: space-evenly;
+    font-family: "Vibur", cursive;
 }
 .botonver{
     text-align: center;
@@ -154,6 +161,7 @@ body {
     border-color: #052D49;
     width: 45%;
     background-color: #0D6EFD;
+    font-family: "Vibur", cursive;
 }
 .botonver:hover{
     background-color: #f4f6f7;
@@ -167,6 +175,7 @@ body {
     border-color: #052D49;
     width: 45%;
     background-color: #0D6EFD;
+    font-family: "Vibur", cursive;
 }
 .botonañadir:hover{
     background-color: #f4f6f7;
@@ -186,6 +195,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Sedgwick Ave", cursive;
 }
 /*main_________________________________________________________*/
 main {
@@ -247,6 +257,7 @@ main {
     border-color: #052D49;
     width: 100%;
     background-color: #0D6EFD;
+    font-family: "Vibur", cursive;
 }
 .botonatras:hover{
     background-color: #f4f6f7;
@@ -256,8 +267,9 @@ main {
     text-align: center;
     list-style: none;
     font-weight: 900;
-    width: 100%;
+    width: 100%;    
     padding: 20px 30px;
     background-color: #052D49;
     color: white;
+    font-family: "Sedgwick Ave", cursive;
 }
